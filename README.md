@@ -1,5 +1,13 @@
 # Data-and-model-isolation-on-EKS
 **利用*EKS*和*resource access manager*实现机器学习模型与数据隔离**
+## 免责声明
+
+建议测试过程中使用此方案，生产环境使用请自行考虑评估。
+
+当您对方案需要进一步的沟通和反馈后，可以联系 nwcd_labs@nwcdcloud.cn 获得更进一步的支持。
+
+欢迎联系参与方案共建和提交方案需求, 也欢迎在 github 项目 issue 中留言反馈 bugs。
+
 ## 介绍
 在机器学习中，有一种常见的需求：甲方提供数据，乙方提供机器学习模型。甲方要确保数据不被乙方保存副本，而乙方也要保护自己的机器学习模型不被甲方获取。这种场景借助AWS的三个服务可以轻松实现，这三个服务分别是EKS，AWS Resource Access Manager，AWS Organizations。
 
